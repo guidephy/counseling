@@ -40,13 +40,28 @@
 
           <lable>使用日期:</lable>
           <input type="text" id="datepicker" placeholder="請選擇日期">
-           
-         
+          <lable>班級</lable> 
+          <input type="text" id="classroom" placeholder="請輸入班級或學生">
           </fieldset>
      
           <div data-role="fieldcontain">
           <fieldset data-role="controlgroup" data-type="horizontal">
         
+          <label for="use-room">使用老師</label>
+          <select id="use-teacher">
+          <option value="">登記老師</option>  
+          <option value="王慧芳">王慧芳</option>
+          <option value="林仟弘">林仟弘</option>
+          <option value="趙淳雅">趙淳雅</option>
+          <option value="劉羿潁">劉羿潁</option> 
+          <option value="吳姿瑩">吳姿瑩</option>
+          <option value="蔡美娟">蔡美娟</option>
+          <option value="杜卉千">杜卉千</option> 
+          <option value="宋佳芸">宋佳芸</option>
+          <option value="陳羿筑">陳羿筑</option>
+          <option value="劉禎芸">劉禎芸</option> 
+          </select>   
+            
           <label for="use-room">使用空間</label>
           <select id="use-room" >
           <option value="">使用空間</option>  
@@ -70,20 +85,7 @@
           <option value="第八節">第八節</option> 
           </select>     
             
-          <label for="use-room">使用老師</label>
-          <select id="use-teacher">
-          <option value="">使用老師</option>  
-          <option value="王慧芳">王慧芳</option>
-          <option value="林仟弘">林仟弘</option>
-          <option value="趙淳雅">趙淳雅</option>
-          <option value="劉羿潁">劉羿潁</option> 
-          <option value="吳姿瑩">吳姿瑩</option>
-          <option value="蔡美娟">蔡美娟</option>
-          <option value="杜卉千">杜卉千</option> 
-          <option value="宋佳芸">宋佳芸</option>
-          <option value="陳羿筑">陳羿筑</option>
-          <option value="劉禎芸">劉禎芸</option> 
-          </select>  
+         
          
           </fieldset>
           <input type="submit" value="提交">
