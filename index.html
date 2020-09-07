@@ -1,104 +1,255 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-  <title>觀音高中諮商室借用登記系統</title>
- 
-    <link rel=stylesheet href=jquery.mobile-1.4.5.min.css>
-    <script src=jquery-2.2.4.min.js></script>
-    <script src=jquery.mobile-1.4.5.min.js></script>
-    <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
-    
-     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-     <link rel="stylesheet" href="/resources/demos/style.css">
-  
-     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    
-      <script>
-        $(function() {
-          $( "#datepicker" ).datepicker();
-        });
-      </script>
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    </head>
-  
-    <body>  
-
-    <div data-role="page">
-      
-      <div data-role="header" data-position="fixed">
-        <h1>諮商室借用登記系統</h1>
-      </div>
-      
-       <div data-role="content" align="center">
-         
-    
-       <form>
-         <fieldset data-role="controlgroup" data-type="horizontal" >
-    
-        <input type="text" placeholder="班級或學生" >
-       
-           
-          <select id="use-teacher">
-          <option value="">登記老師</option>  
-          <option value="王慧芳">王慧芳</option>
-          <option value="林仟弘">林仟弘</option>
-          <option value="趙淳雅">趙淳雅</option>
-          <option value="劉羿潁">劉羿潁</option> 
-          <option value="吳姿瑩">吳姿瑩</option>
-          <option value="蔡美娟">蔡美娟</option>
-          <option value="杜卉千">杜卉千</option> 
-          <option value="宋佳芸">宋佳芸</option>
-          <option value="陳羿筑">陳羿筑</option>
-          <option value="劉禎芸">劉禎芸</option> 
-          </select>   
-           
-       
-          <select id="use-room" >
-          <option value="">使用空間</option>  
-          <option value="個諮1">個諮1</option>
-          <option value="個諮2">個諮2</option>
-          <option value="團諮3">團諮3</option>   
-          </select>  
-           
-      
-          <select id="use-room">
-          <option value="">時間</option>  
-          <option value="第一節">第一節</option>
-          <option value="第二節">第二節</option>
-          <option value="第三節">第三節</option> 
-          <option value="第四節">第四節</option>
-          <option value="午休">午休</option>
-          <option value="第五節">第五節</option> 
-          <option value="第六節">第六節</option>
-          <option value="第七節">第七節</option>
-          <option value="第八節">第八節</option> 
-          </select>   
-          
-        
-           
-         </fieldset> 
-         
-          <input type="date" id="use-date" placeholder="使用時間"> 
-          <input type="button" value="送出"  id="sendBtn" style="width:50%;">
-         
-       </form>
-       
+  <table style="line-height:100%;" border="1" >
+  <tr style="background-color:yellow"  align="center"  valign="middle">
+　   <td ></td>
+     <td colspan="3"  width="15%">週一</td>
+　   <td colspan="3"  width="15%">週二</td>
+     <td colspan="3"  width="15%">週三</td>
+     <td colspan="3"  width="15%">週四</td>
+　   <td colspan="3"  width="15%">週五</td>
+     <td colspan="3"  width="15%">週六</td>
      
-      
-        </div> 
-      
-          
-      
-        </div>
-      
-     </body>
-  
-
-  
- <script> 
+  </tr>
+  <tr style="background-color:pink" align="center"  valign="middle">
+     <td style="background-color:yellow" >節次</td>
+　   <td>個諮1</td>
+　   <td>個諮2</td>
+     <td>團諮3</td>
+     <td>個諮1</td>
+　   <td>個諮2</td>
+     <td>團諮3</td>
+     <td>個諮1</td>
+　   <td>個諮2</td>
+     <td>團諮3</td>
+     <td>個諮1</td>
+　   <td>個諮2</td>
+     <td>團諮3</td>
+     <td>個諮1</td>
+　   <td>個諮2</td>
+     <td>團諮3</td>
+     <td>個諮1</td>
+　   <td>個諮2</td>
+     <td>團諮3</td>
     
- </script>
-                                                                                                   
-</html>
+  </tr>
+  <tr align="center"  valign="middle">
+     <td style="background-color:yellow" ><br>1<br><br></td>
+　   <td><input type="button" value="登記"></td>
+　   <td><input type="button" value="登記"></td>
+     <td><input type="button" value="登記"></td>
+     <td><input type="button" value="登記"></td>
+　   <td><input type="button" value="登記"></td>
+     <td><input type="button" value="登記"></td>
+     <td><input type="button" value="登記"></td>
+　   <td><input type="button" value="登記"></td>
+     <td><input type="button" value="登記"></td>
+     <td><input type="button" value="登記"></td>
+　   <td><input type="button" value="登記"></td>
+     <td><input type="button" value="登記"></td>
+     <td><input type="button" value="登記"></td>
+　   <td><input type="button" value="登記"></td>
+     <td><input type="button" value="登記"></td>
+     <td><input type="button" value="登記"></td>
+　   <td><input type="button" value="登記"></td>
+     <td><input type="button" value="登記"></td>
+    
+  </tr>
+    <tr align="center"  valign="middle">
+     <td style="background-color:yellow" ><br>2<br><br></td>
+　   <td><input type="button" value="登記"></td>
+　   <td><input type="button" value="登記"></td>
+     <td><input type="button" value="登記"></td>
+     <td><input type="button" value="登記"></td>
+　   <td><input type="button" value="登記"></td>
+     <td><input type="button" value="登記"></td>
+     <td><input type="button" value="登記"></td>
+　   <td><input type="button" value="登記"></td>
+     <td><input type="button" value="登記"></td>
+     <td><input type="button" value="登記"></td>
+　   <td><input type="button" value="登記"></td>
+     <td><input type="button" value="登記"></td>
+     <td><input type="button" value="登記"></td>
+　   <td><input type="button" value="登記"></td>
+     <td><input type="button" value="登記"></td>
+     <td><input type="button" value="登記"></td>
+　   <td><input type="button" value="登記"></td>
+     <td><input type="button" value="登記"></td>
+     
+  </tr>
+    <tr align="center"  valign="middle">
+     <td style="background-color:yellow" ><br>3<br><br></td>
+　   <td><input type="button" value="登記"></td>
+　   <td><input type="button" value="登記"></td>
+     <td><input type="button" value="登記"></td>
+     <td><input type="button" value="登記"></td>
+　   <td><input type="button" value="登記"></td>
+     <td><input type="button" value="登記"></td>
+     <td><input type="button" value="登記"></td>
+　   <td><input type="button" value="登記"></td>
+     <td><input type="button" value="登記"></td>
+     <td><input type="button" value="登記"></td>
+　   <td><input type="button" value="登記"></td>
+     <td><input type="button" value="登記"></td>
+     <td><input type="button" value="登記"></td>
+　   <td><input type="button" value="登記"></td>
+     <td><input type="button" value="登記"></td>
+     <td><input type="button" value="登記"></td>
+　   <td><input type="button" value="登記"></td>
+     <td><input type="button" value="登記"></td>
+    
+  </tr>
+    <tr align="center"  valign="middle">
+     <td style="background-color:yellow" ><br>4<br><br></td>
+　   <td><input type="button" value="登記"></td>
+　   <td><input type="button" value="登記"></td>
+     <td><input type="button" value="登記"></td>
+     <td><input type="button" value="登記"></td>
+　   <td><input type="button" value="登記"></td>
+     <td><input type="button" value="登記"></td>
+     <td><input type="button" value="登記"></td>
+　   <td><input type="button" value="登記"></td>
+     <td><input type="button" value="登記"></td>
+     <td><input type="button" value="登記"></td>
+　   <td><input type="button" value="登記"></td>
+     <td><input type="button" value="登記"></td>
+     <td><input type="button" value="登記"></td>
+　   <td><input type="button" value="登記"></td>
+     <td><input type="button" value="登記"></td>
+     <td><input type="button" value="登記"></td>
+　   <td><input type="button" value="登記"></td>
+     <td><input type="button" value="登記"></td>
+   
+  </tr>
+    <tr align="center"  valign="middle">
+     <td style="background-color:yellow" ><br>午休<br><br></td>
+　   <td><input type="button" value="登記"></td>
+　   <td><input type="button" value="登記"></td>
+     <td><input type="button" value="登記"></td>
+     <td><input type="button" value="登記"></td>
+　   <td><input type="button" value="登記"></td>
+     <td><input type="button" value="登記"></td>
+     <td><input type="button" value="登記"></td>
+　   <td><input type="button" value="登記"></td>
+     <td><input type="button" value="登記"></td>
+     <td><input type="button" value="登記"></td>
+　   <td><input type="button" value="登記"></td>
+     <td><input type="button" value="登記"></td>
+     <td><input type="button" value="登記"></td>
+　   <td><input type="button" value="登記"></td>
+     <td><input type="button" value="登記"></td>
+     <td><input type="button" value="登記"></td>
+　   <td><input type="button" value="登記"></td>
+     <td><input type="button" value="登記"></td>
+    
+  </tr>
+  <tr align="center"  valign="middle">
+     <td style="background-color:yellow" ><br>5<br><br></td>
+　   <td><input type="button" value="登記"></td>
+　   <td><input type="button" value="登記"></td>
+     <td><input type="button" value="登記"></td>
+     <td><input type="button" value="登記"></td>
+　   <td><input type="button" value="登記"></td>
+     <td><input type="button" value="登記"></td>
+     <td><input type="button" value="登記"></td>
+　   <td><input type="button" value="登記"></td>
+     <td><input type="button" value="登記"></td>
+     <td><input type="button" value="登記"></td>
+　   <td><input type="button" value="登記"></td>
+     <td><input type="button" value="登記"></td>
+     <td><input type="button" value="登記"></td>
+　   <td><input type="button" value="登記"></td>
+     <td><input type="button" value="登記"></td>
+     <td><input type="button" value="登記"></td>
+　   <td><input type="button" value="登記"></td>
+     <td><input type="button" value="登記"></td>
+    
+  </tr>
+    <tr align="center"  valign="middle">
+     <td style="background-color:yellow" ><br>6<br><br></td>
+　   <td><input type="button" value="登記"></td>
+　   <td><input type="button" value="登記"></td>
+     <td><input type="button" value="登記"></td>
+     <td><input type="button" value="登記"></td>
+　   <td><input type="button" value="登記"></td>
+     <td><input type="button" value="登記"></td>
+     <td><input type="button" value="登記"></td>
+　   <td><input type="button" value="登記"></td>
+     <td><input type="button" value="登記"></td>
+     <td><input type="button" value="登記"></td>
+　   <td><input type="button" value="登記"></td>
+     <td><input type="button" value="登記"></td>
+     <td><input type="button" value="登記"></td>
+　   <td><input type="button" value="登記"></td>
+     <td><input type="button" value="登記"></td>
+     <td><input type="button" value="登記"></td>
+　   <td><input type="button" value="登記"></td>
+     <td><input type="button" value="登記"></td>
+    
+  </tr>
+    <tr align="center"  valign="middle">
+     <td style="background-color:yellow" ><br>7<br><br></td>
+　   <td><input type="button" value="登記"></td>
+　   <td><input type="button" value="登記"></td>
+     <td><input type="button" value="登記"></td>
+     <td><input type="button" value="登記"></td>
+　   <td><input type="button" value="登記"></td>
+     <td><input type="button" value="登記"></td>
+     <td><input type="button" value="登記"></td>
+　   <td><input type="button" value="登記"></td>
+     <td><input type="button" value="登記"></td>
+     <td><input type="button" value="登記"></td>
+　   <td><input type="button" value="登記"></td>
+     <td><input type="button" value="登記"></td>
+     <td><input type="button" value="登記"></td>
+　   <td><input type="button" value="登記"></td>
+     <td><input type="button" value="登記"></td>
+     <td><input type="button" value="登記"></td>
+　   <td><input type="button" value="登記"></td>
+     <td><input type="button" value="登記"></td>
+    
+  </tr>
+    <tr align="center"  valign="middle">
+     <td style="background-color:yellow" ><br>8<br><br></td>
+　   <td><input type="button" value="登記"></td>
+　   <td><input type="button" value="登記"></td>
+     <td><input type="button" value="登記"></td>
+     <td><input type="button" value="登記"></td>
+　   <td><input type="button" value="登記"></td>
+     <td><input type="button" value="登記"></td>
+     <td><input type="button" value="登記"></td>
+　   <td><input type="button" value="登記"></td>
+     <td><input type="button" value="登記"></td>
+     <td><input type="button" value="登記"></td>
+　   <td><input type="button" value="登記"></td>
+     <td><input type="button" value="登記"></td>
+     <td><input type="button" value="登記"></td>
+　   <td><input type="button" value="登記"></td>
+     <td><input type="button" value="登記"></td>
+     <td><input type="button" value="登記"></td>
+　   <td><input type="button" value="登記"></td>
+     <td><input type="button" value="登記"></td>
+    
+  </tr>
+    <tr align="center"  valign="middle">
+     <td style="background-color:yellow" ><br>晚上<br><br></td>
+　   <td><input type="button" value="登記"></td>
+　   <td><input type="button" value="登記"></td>
+     <td><input type="button" value="登記"></td>
+     <td><input type="button" value="登記"></td>
+　   <td><input type="button" value="登記"></td>
+     <td><input type="button" value="登記"></td>
+     <td><input type="button" value="登記"></td>
+　   <td><input type="button" value="登記"></td>
+     <td><input type="button" value="登記"></td>
+     <td><input type="button" value="登記"></td>
+　   <td><input type="button" value="登記"></td>
+     <td><input type="button" value="登記"></td>
+     <td><input type="button" value="登記"></td>
+　   <td><input type="button" value="登記"></td>
+     <td><input type="button" value="登記"></td>
+     <td><input type="button" value="登記"></td>
+　   <td><input type="button" value="登記"></td>
+     <td><input type="button" value="登記"></td>
+     
+  </tr>
+
+</table>
