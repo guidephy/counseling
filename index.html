@@ -8,8 +8,21 @@
     <script src=jquery-2.2.4.min.js></script>
     <script src=jquery.mobile-1.4.5.min.js></script>
     <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="https://pulipulichen.github.io/20190930-RWD-Table-to-SVG/vandors/jquery/jquery-3.4.1.min.js"></script>
+    <script src="https://pulipulichen.github.io/20190930-RWD-Table-to-SVG/vandors/dom-to-image/dom-to-image.js"></script>
+    <script src="https://pulipulichen.github.io/20190930-RWD-Table-to-SVG/table-thumbnail-rwd.js"></script>
     
     <meta name="viewport" content="width=device-width, initial-scale=1">
+      <script>
+        $(() => {
+        $('table').each((i, table) => {
+            TableThumbnailRWD(table, {
+      // options...
+        })
+        })
+        })
+      </script>
+    
     </head>
   
     <body>  
