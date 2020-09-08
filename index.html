@@ -33,7 +33,7 @@
     </div>
 
 <div id="tabledata" style='visibility:hidden'>
-    <h4>&nbsp&nbsp使用學生班級:<input placeholder="請輸入學生班級">&nbsp&nbsp老師:<input placeholder="請輸入老師名字">
+    <h4>&nbsp&nbsp使用學生班級:<input id="class" placeholder="請輸入學生班級">&nbsp&nbsp老師:<input id="name" placeholder="請輸入老師名字">
     <table border="1" align="center" style="width:100%"  >
 　       <tr style="background-color:yellow">
 　           <td colspan="12" align="center"><button id="backBtn"  onclick="back()">上一週</button>&nbsp&nbsp<<&nbsp&nbsp第<span id="week"></span>週&nbsp&nbsp>>&nbsp&nbsp<button id="nextBtn"  onclick="next()">下一週</button></td>
@@ -58,16 +58,16 @@
  <tr align="center">
 　<td rowspan="3"style="background-color:yellow" ><br><span id="monday"></span><br>(一)<br></td>
 　<td style="background-color:pink" >個諮1</td>
-    <td  ><input type="button" id="(2,2)" value="登記"></td>
-    <td  ><input type="button" id="(2,3)" value="登記"></td>
-    <td  ><input type="button" id="(2,4)" value="登記"></td>
-    <td  ><input type="button" id="(2,5)" value="登記"></td>
-    <td  ><input type="button" id="(2,6)" value="登記"></td>
-    <td  ><input type="button" id="(2,7)" value="登記"></td>
-    <td  ><input type="button" id="(2,8)" value="登記"></td>
-    <td  ><input type="button" id="(2,9)" value="登記"></td>
-    <td  ><input type="button" id="(2,10)" value="登記"></td>
-    <td  ><input type="button" id="(2,11)" value="登記"></td>
+    <td  ><input type="button" id="(2,2)" value="登記" onclick="writeData(this)"></td>
+    <td  ><input type="button" id="(2,3)" value="登記" onclick="writeData(this)"></td>
+    <td  ><input type="button" id="(2,4)" value="登記" onclick="writeData(this)"></td>
+    <td  ><input type="button" id="(2,5)" value="登記" onclick="writeData(this)"></td>
+    <td  ><input type="button" id="(2,6)" value="登記" onclick="writeData(this)"></td>
+    <td  ><input type="button" id="(2,7)" value="登記" onclick="writeData(this)"></td>
+    <td  ><input type="button" id="(2,8)" value="登記" onclick="writeData(this)"></td>
+    <td  ><input type="button" id="(2,9)" value="登記" onclick="writeData(this)"></td>
+    <td  ><input type="button" id="(2,10)" value="登記" onclick="writeData(this)"></td>
+    <td  ><input type="button" id="(2,11)" value="登記" onclick="writeData(this)"></td>
 　</tr>
 　<tr align="center">
 　<td style="background-color:pink">個諮2</td>
@@ -364,6 +364,19 @@ function back(){
     }
 
 
+function writeData(abc){
+
+if(abc.value=="登記"&&document.getElementById("name").value){    
+abc.value=document.getElementById("class").value+"  "+document.getElementById("name").value;
+abc.style.color = 'blue';
+
+alert("登記完成");
+}else if(abc.value==document.getElementById("class").value+"  "+document.getElementById("name").value){
+    abc.value="登記";
+    alert("已取消登記");
+    abc.style.color = 'black';
+}
+}
   
     
 
@@ -372,4 +385,3 @@ function back(){
 
 </body>
 </html>
-
