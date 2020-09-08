@@ -4,28 +4,13 @@
 
     <script src=jquery-2.2.4.min.js></script>
     <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
-<meta charset="utf-8">
-<title>觀音高中諮商室借用系統</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
- 
- <script>
-  
-   var parameter = {};
-   var datedata;
-  
-    $.get("https://script.google.com/macros/s/AKfycbxu3TT3FCo430Dcdtnx27oC9PTVUlO0x9RTBw558WtMeUfER10/exec", parameter, function(data) {
-        
-               datedata=data.split(",");
-              
-        
-      });
-
-
-  
- </script>
- 
+    <meta charset="utf-8">
+    <title>觀音高中諮商室借用系統</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
  
 </head>
+    
+    
 <body>
 <h2 align="center" style="color:blue;">觀音高中諮商室借用系統</h2>
 <h4>&nbsp&nbsp使用登記: 學生班級:<input placeholder="請輸入學生班級">&nbsp&nbsp老師:<input placeholder="請輸入老師名字">
@@ -298,6 +283,18 @@
 
     
 <script>
+    
+   var parameter = {};
+   var datedata=[];
+  
+    $.get("https://script.google.com/macros/s/AKfycbxu3TT3FCo430Dcdtnx27oC9PTVUlO0x9RTBw558WtMeUfER10/exec", parameter, function(data) {
+        
+               datedata=data.split(",");
+              
+        
+      });    
+    
+    
 document.getElementById("monday").innerHTML=datedata[1];
 </script>
 
