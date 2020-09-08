@@ -40,8 +40,8 @@
 　       </tr>
 
  <tr align="center" valign="middle" style="background-color:yellow">
-    <td  style="width:7%">日期</td>
-　   <td  style="width:5%">教室\節次</td>
+    <td  style="width:6%">日期</td>
+　   <td  style="width:6%">教室\節次</td>
     <td  style="width:9%">&nbsp1&nbsp</td>
     <td  style="width:9%">&nbsp2&nbsp</td>
     <td  style="width:9%">&nbsp3&nbsp</td>
@@ -51,7 +51,7 @@
     <td  style="width:9%">&nbsp6&nbsp</td>
     <td  style="width:9%">&nbsp7&nbsp</td>
     <td  style="width:9%">&nbsp8&nbsp</td>
-    <td  style="width:9%">晚上</td>
+    <td  style="width:7%">晚上</td>
 
 　</tr>
 
@@ -307,6 +307,7 @@
 
 
      setTimeout(function(){   
+        i=(datedata[0]-1)*7+1;
         document.getElementById("week").innerHTML=(i-1)/7+1; 
         document.getElementById("monday").innerHTML=datedata[i]; 
         document.getElementById("tuesday").innerHTML=datedata[i+1]; 
