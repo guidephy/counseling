@@ -22,7 +22,9 @@
 
              $.get("https://script.google.com/macros/s/AKfycbwhasU6XoDxoduoyVz0JYzVbyZzYKRohaY3AiWRG8xm7WFiX0u5/exec", parameter, function(data) {
         
-            registerdata=data.split(",");           
+            registerdata=data.split(",");
+          
+           
         
             });  
 
@@ -43,7 +45,19 @@
     </div>
 
 <div id="tabledata" style='visibility:hidden'>
-    <h4>&nbsp&nbsp使用學生班級:<input id="class" placeholder="請輸入學生班級">&nbsp&nbsp老師:<input id="name" placeholder="請輸入老師名字">
+    <h4>&nbsp&nbsp使用學生班級:<input id="class" placeholder="請輸入學生班級">&nbsp&nbsp老師:<select name="sele" id="username">
+　                                   <option value=""></option>
+                                   　<option value="王慧芳">王慧芳</option>
+　                                   <option value="蔡美娟">蔡美娟</option>
+　                                   <option value="杜卉千">杜卉千</option>
+                                     <option value="宋佳芸">宋佳芸</option>
+    　                               <option value="陳羿筑">陳羿筑</option>
+                                     <option value="吳姿瑩">吳姿瑩</option>
+                                     <option value="劉羿潁">劉羿潁</option>
+    　                               <option value="趙淳雅">趙淳雅</option>
+                                     <option value="林仟弘">林仟弘</option>               
+                        </select>
+
     <table border="1" align="center" style="width:100%"  >
 　       <tr style="background-color:yellow">
 　           <td colspan="12" align="center"><button id="backBtn"  onclick="back()">上一週</button>&nbsp&nbsp<<&nbsp&nbsp第<span id="week"></span>週&nbsp&nbsp>>&nbsp&nbsp<button id="nextBtn"  onclick="next()">下一週</button></td>
@@ -515,12 +529,15 @@ function back(){
 
 function writeData(abc){
 
-if(abc.value=="登記"&&document.getElementById("name").value){    
-abc.value=document.getElementById("class").value+"  "+document.getElementById("name").value;
+var e = document.getElementById("username");
+var tname = e.options[e.selectedIndex].value;
+
+if(abc.value=="登記"&&tname){    
+abc.value=document.getElementById("class").value+"  "+tname;
 abc.style.color = 'blue';
 
 alert("登記完成");
-}else if(abc.value==document.getElementById("class").value+"  "+document.getElementById("name").value){
+}else if(abc.value==document.getElementById("class").value+"  "+tname){
     abc.value="登記";
     alert("已取消登記");
     abc.style.color = 'black';
