@@ -12,7 +12,7 @@
    var datedata;
    var registerdata;
    var y;
-   var i;
+   var i=1;
    var z=0;
   
 
@@ -23,7 +23,7 @@
              $.get("https://script.google.com/macros/s/AKfycbwhasU6XoDxoduoyVz0JYzVbyZzYKRohaY3AiWRG8xm7WFiX0u5/exec", parameter, function(data) {
         
             registerdata=data.split(",");
-          
+      
            
         
             });  
@@ -430,10 +430,10 @@
       
         
 
-       
+        z=240*(i-1)/7;
 
         for (y=1;y<=240;y++){
-           document.getElementById(y).value=registerdata[y]; 
+           document.getElementById(y).value=registerdata[y+z]; 
 
     
            if (registerdata[y]=="登記"){
@@ -534,10 +534,19 @@ var e = document.getElementById("username");
 var tname = e.options[e.selectedIndex].value;
 
 if(abc.value=="登記"&&tname){    
-abc.value=document.getElementById("class").value+"  "+tname;
-abc.style.color = 'blue';
 
-alert("登記完成");
+      $.get("https://script.google.com/macros/s/AKfycbw3XVi8A4QlOaozb-PCYzvDBWL5paSmsXAfyE8DEoQ2A8csytvp/exec",{ 
+                         "j":  abc.id,
+                         "abc": document.getElementById("class").value+"  "+tname},
+                        function (data) {
+                             
+                       abc.value=document.getElementById("class").value+"  "+tname;
+                       abc.style.color = 'blue';
+                       alert("登記完成");
+                    });    
+
+
+
 }else if(abc.value==document.getElementById("class").value+"  "+tname){
     abc.value="登記";
     alert("已取消登記");
