@@ -540,10 +540,14 @@ if(abc.value=="登記"&&tname){
                          "abc": document.getElementById("class").value+"  "+tname},
                         function (data) {
                          
-                         
+                         if (data=="登記完成"){
                        abc.value=document.getElementById("class").value+"  "+tname;
                        abc.style.color = 'blue';
-                       //alert("登記完成");
+                       alert(data);
+                       }else
+                       {
+                        alert(data);
+                       }
                     });    
       registerdata[ parseInt(abc.id)+z]=document.getElementById("class").value+"  "+tname;
 
