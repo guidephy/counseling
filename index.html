@@ -483,6 +483,8 @@ function send(){
 if (document.getElementById("passcode").value=="123456") {
      document.getElementById("password").remove();
      document.getElementById("tabledata").style.visibility='visible';
+}else if(document.getElementById("passcode").value=="統計結果"){
+    alert("總計用了"++"個場次");
 }else{
 alert("密碼錯誤!")
 };
