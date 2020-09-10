@@ -612,7 +612,8 @@ if(abc.value=="登記"&&tname){
 
       $.get("https://script.google.com/macros/s/AKfycbw3XVi8A4QlOaozb-PCYzvDBWL5paSmsXAfyE8DEoQ2A8csytvp/exec",{ 
                          "j": parseInt(abc.id)+z,
-                         "abc": document.getElementById("class").value+"  "+tname},
+                         "abc": document.getElementById("class").value+"  "+tname,
+                         "i":0},
                         function (data) {
                          
                          if (data=="登記完成"){
@@ -656,7 +657,9 @@ if(abc.value=="登記"&&tname){
 
 $.get("https://script.google.com/macros/s/AKfycbw3XVi8A4QlOaozb-PCYzvDBWL5paSmsXAfyE8DEoQ2A8csytvp/exec",{ 
                          "j": parseInt(abc.id)+z,
-                         "abc": "登記"},
+                         "abc": "登記",
+                          "i":1},
+                         
                         function (data) {
                          
                          
@@ -665,7 +668,8 @@ $.get("https://script.google.com/macros/s/AKfycbw3XVi8A4QlOaozb-PCYzvDBWL5paSmsX
                        abc.style.background = "#F5F5F5";
 
                          alert("已取消登記");
-                    });    
+                    });  
+
       registerdata[ parseInt(abc.id)+z]="登記";
 
 
