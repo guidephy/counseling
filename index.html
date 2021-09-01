@@ -43,11 +43,11 @@
       
         
 
-        z=240*(i-1)/7;
+        z=300*(i-1)/7;
 
         var tname;
         var bc;
-        for (y=1;y<=240;y++){
+        for (y=1;y<=300;y++){
            document.getElementById(y).value=registerdata[y+z]; 
 
     
@@ -113,7 +113,7 @@
 <h4>使用學生班級:<input id="class" placeholder="請輸入學生班級"></h4>
     
 
-    <table border="1" align="center" style="width:100%"  >
+    <table border="1" align="center" style="border:3px #FFAC55 solid;padding:5px; width:100%" rules="all"  >
 　       <tr style="background-color:yellow">
 　           <td colspan="12" align="center"><button id="backBtn"  onclick="back()">上一週</button>&nbsp&nbsp<<&nbsp&nbsp第<span id="week"></span>週&nbsp&nbsp>>&nbsp&nbsp<button id="nextBtn"  onclick="next()">下一週</button></td>
 　       </tr>
@@ -135,8 +135,8 @@
 　</tr>
 
  <tr align="center">
-　<td rowspan="4"style="background-color:yellow" ><br><span id="monday"></span><br>(一)<br></td>
-　<td style="background-color:#FFDD55" >個諮1</td>
+　<td rowspan="5"style="background-color:yellow" ><br><span id="monday"></span><br>(一)<br></td>
+　<td style="background-color:#FFDD55" >諮商A</td>
     <td  ><input type="button" id="1" value="登記" onclick="writeData(this)"></td>
     <td  ><input type="button" id="2" value="登記" onclick="writeData(this)"></td>
     <td  ><input type="button" id="3" value="登記" onclick="writeData(this)"></td>
@@ -149,7 +149,7 @@
     <td  ><input type="button" id="10" value="登記" onclick="writeData(this)"></td>
 　</tr>
 　<tr align="center">
-　<td style="background-color:#FFDD55">個諮2</td>
+　<td style="background-color:#FFDD55">諮商B</td>
     <td  ><input type="button" id="11" value="登記" onclick="writeData(this)"></td>
     <td  ><input type="button" id="12" value="登記" onclick="writeData(this)"></td>
     <td  ><input type="button" id="13" value="登記" onclick="writeData(this)"></td>
@@ -162,7 +162,7 @@
     <td  ><input type="button" id="20" value="登記" onclick="writeData(this)"></td>
 　</tr>
  <tr align="center">
-　<td style="background-color:#FFDD55">團諮3</td>
+　<td style="background-color:#FFDD55">諮商C</td>
     <td  ><input type="button" id="21" value="登記" onclick="writeData(this)"></td>
     <td  ><input type="button" id="22" value="登記" onclick="writeData(this)"></td>
     <td  ><input type="button" id="23" value="登記" onclick="writeData(this)"></td>
@@ -175,7 +175,7 @@
     <td  ><input type="button" id="30" value="登記" onclick="writeData(this)"></td>
 　</tr>
  <tr align="center">
-　<td style="background-color:#FFDD55">905</td>
+　<td style="background-color:#FFDD55">諮商D</td>
     <td  ><input type="button" id="31" value="登記" onclick="writeData(this)"></td>
     <td  ><input type="button" id="32" value="登記" onclick="writeData(this)"></td>
     <td  ><input type="button" id="33" value="登記" onclick="writeData(this)"></td>
@@ -187,23 +187,23 @@
     <td  ><input type="button" id="39" value="登記" onclick="writeData(this)"></td>
     <td  ><input type="button" id="40" value="登記" onclick="writeData(this)"></td>
 　</tr>
+ <tr align="center">
+　<td style="background-color:#FFDD55">諮商E</td>
+    <td  ><input type="button" id="41" value="登記" onclick="writeData(this)"></td>
+    <td  ><input type="button" id="42" value="登記" onclick="writeData(this)"></td>
+    <td  ><input type="button" id="43" value="登記" onclick="writeData(this)"></td>
+    <td  ><input type="button" id="44" value="登記" onclick="writeData(this)"></td>
+    <td  ><input type="button" id="45" value="登記" onclick="writeData(this)"></td>
+    <td  ><input type="button" id="46" value="登記" onclick="writeData(this)"></td>
+    <td  ><input type="button" id="47" value="登記" onclick="writeData(this)"></td>
+    <td  ><input type="button" id="48" value="登記" onclick="writeData(this)"></td>
+    <td  ><input type="button" id="49" value="登記" onclick="writeData(this)"></td>
+    <td  ><input type="button" id="50" value="登記" onclick="writeData(this)"></td>
+　</tr>
 
  <tr align="center">
-　<td rowspan="4" style="background-color:yellow"><br><span id="tuesday"></span><br>(二)<br></td>
- <td style="background-color:#FFDD55">個諮1</td>
-    <td  style="background-color:#FFFFC9" ><input type="button" id="41" value="登記" onclick="writeData(this)"></td>
-    <td  style="background-color:#FFFFC9"><input type="button" id="42" value="登記" onclick="writeData(this)"></td>
-    <td  style="background-color:#FFFFC9"><input type="button" id="43" value="登記" onclick="writeData(this)"></td>
-    <td  style="background-color:#FFFFC9"><input type="button" id="44" value="登記" onclick="writeData(this)"></td>
-    <td  style="background-color:#FFFFC9"><input type="button" id="45" value="登記" onclick="writeData(this)"></td>
-    <td  style="background-color:#FFFFC9"><input type="button" id="46" value="登記" onclick="writeData(this)"></td>
-    <td  style="background-color:#FFFFC9"><input type="button" id="47" value="登記" onclick="writeData(this)"></td>
-    <td  style="background-color:#FFFFC9"><input type="button" id="48" value="登記" onclick="writeData(this)"></td>
-    <td  style="background-color:#FFFFC9"><input type="button" id="49" value="登記" onclick="writeData(this)"></td>
-    <td  style="background-color:#FFFFC9"><input type="button" id="50" value="登記" onclick="writeData(this)"></td>
-　</tr>
-　<tr align="center">
-　<td style="background-color:#FFDD55">個諮2</td>
+　<td rowspan="5" style="background-color:yellow"><br><span id="tuesday"></span><br>(二)<br></td>
+ <td style="background-color:#FFDD55">諮商A</td>
     <td  style="background-color:#FFFFC9" ><input type="button" id="51" value="登記" onclick="writeData(this)"></td>
     <td  style="background-color:#FFFFC9"><input type="button" id="52" value="登記" onclick="writeData(this)"></td>
     <td  style="background-color:#FFFFC9"><input type="button" id="53" value="登記" onclick="writeData(this)"></td>
@@ -215,9 +215,9 @@
     <td  style="background-color:#FFFFC9"><input type="button" id="59" value="登記" onclick="writeData(this)"></td>
     <td  style="background-color:#FFFFC9"><input type="button" id="60" value="登記" onclick="writeData(this)"></td>
 　</tr>
- <tr align="center">
-　<td style="background-color:#FFDD55">團諮3</td>
-   <td  style="background-color:#FFFFC9" ><input type="button" id="61" value="登記" onclick="writeData(this)"></td>
+　<tr align="center">
+　<td style="background-color:#FFDD55">諮商B</td>
+    <td  style="background-color:#FFFFC9" ><input type="button" id="61" value="登記" onclick="writeData(this)"></td>
     <td  style="background-color:#FFFFC9"><input type="button" id="62" value="登記" onclick="writeData(this)"></td>
     <td  style="background-color:#FFFFC9"><input type="button" id="63" value="登記" onclick="writeData(this)"></td>
     <td  style="background-color:#FFFFC9"><input type="button" id="64" value="登記" onclick="writeData(this)"></td>
@@ -228,9 +228,8 @@
     <td  style="background-color:#FFFFC9"><input type="button" id="69" value="登記" onclick="writeData(this)"></td>
     <td  style="background-color:#FFFFC9"><input type="button" id="70" value="登記" onclick="writeData(this)"></td>
 　</tr>
-    
-   <tr align="center">
-　<td style="background-color:#FFDD55">905</td>
+ <tr align="center">
+　<td style="background-color:#FFDD55">諮商C</td>
    <td  style="background-color:#FFFFC9" ><input type="button" id="71" value="登記" onclick="writeData(this)"></td>
     <td  style="background-color:#FFFFC9"><input type="button" id="72" value="登記" onclick="writeData(this)"></td>
     <td  style="background-color:#FFFFC9"><input type="button" id="73" value="登記" onclick="writeData(this)"></td>
@@ -241,36 +240,39 @@
     <td  style="background-color:#FFFFC9"><input type="button" id="78" value="登記" onclick="writeData(this)"></td>
     <td  style="background-color:#FFFFC9"><input type="button" id="79" value="登記" onclick="writeData(this)"></td>
     <td  style="background-color:#FFFFC9"><input type="button" id="80" value="登記" onclick="writeData(this)"></td>
+　</tr>
+    
+   <tr align="center">
+　<td style="background-color:#FFDD55">諮商D</td>
+   <td  style="background-color:#FFFFC9" ><input type="button" id="81" value="登記" onclick="writeData(this)"></td>
+    <td  style="background-color:#FFFFC9"><input type="button" id="82" value="登記" onclick="writeData(this)"></td>
+    <td  style="background-color:#FFFFC9"><input type="button" id="83" value="登記" onclick="writeData(this)"></td>
+    <td  style="background-color:#FFFFC9"><input type="button" id="84" value="登記" onclick="writeData(this)"></td>
+    <td  style="background-color:#FFFFC9"><input type="button" id="85" value="登記" onclick="writeData(this)"></td>
+    <td  style="background-color:#FFFFC9"><input type="button" id="86" value="登記" onclick="writeData(this)"></td>
+    <td  style="background-color:#FFFFC9"><input type="button" id="87" value="登記" onclick="writeData(this)"></td>
+    <td  style="background-color:#FFFFC9"><input type="button" id="88" value="登記" onclick="writeData(this)"></td>
+    <td  style="background-color:#FFFFC9"><input type="button" id="89" value="登記" onclick="writeData(this)"></td>
+    <td  style="background-color:#FFFFC9"><input type="button" id="90" value="登記" onclick="writeData(this)"></td>
+ </tr>
 
  <tr align="center">
-　<td rowspan="4" style="background-color:yellow"><br><span id="wednesday"></span><br>(三)<br></td>
-　<td style="background-color:#FFDD55">個諮1</td>
-     <td  ><input type="button" id="81" value="登記" onclick="writeData(this)"></td>
-    <td  ><input type="button" id="82" value="登記" onclick="writeData(this)"></td>
-    <td  ><input type="button" id="83" value="登記" onclick="writeData(this)"></td>
-    <td  ><input type="button" id="84" value="登記" onclick="writeData(this)"></td>
-    <td  ><input type="button" id="85" value="登記" onclick="writeData(this)"></td>
-    <td  ><input type="button" id="86" value="登記" onclick="writeData(this)"></td>
-    <td  ><input type="button" id="87" value="登記" onclick="writeData(this)"></td>
-    <td  ><input type="button" id="88" value="登記" onclick="writeData(this)"></td>
-    <td  ><input type="button" id="89" value="登記" onclick="writeData(this)"></td>
-    <td  ><input type="button" id="90" value="登記" onclick="writeData(this)"></td>
+　<td style="background-color:#FFDD55">諮商E</td>
+   <td  style="background-color:#FFFFC9" ><input type="button" id="91" value="登記" onclick="writeData(this)"></td>
+    <td  style="background-color:#FFFFC9"><input type="button" id="92" value="登記" onclick="writeData(this)"></td>
+    <td  style="background-color:#FFFFC9"><input type="button" id="93" value="登記" onclick="writeData(this)"></td>
+    <td  style="background-color:#FFFFC9"><input type="button" id="94" value="登記" onclick="writeData(this)"></td>
+    <td  style="background-color:#FFFFC9"><input type="button" id="95" value="登記" onclick="writeData(this)"></td>
+    <td  style="background-color:#FFFFC9"><input type="button" id="96" value="登記" onclick="writeData(this)"></td>
+    <td  style="background-color:#FFFFC9"><input type="button" id="97" value="登記" onclick="writeData(this)"></td>
+    <td  style="background-color:#FFFFC9"><input type="button" id="98" value="登記" onclick="writeData(this)"></td>
+    <td  style="background-color:#FFFFC9"><input type="button" id="99" value="登記" onclick="writeData(this)"></td>
+    <td  style="background-color:#FFFFC9"><input type="button" id="100" value="登記" onclick="writeData(this)"></td>
 　</tr>
-　<tr align="center">
-　<td style="background-color:#FFDD55">個諮2</td>
-     <td  ><input type="button" id="91" value="登記" onclick="writeData(this)"></td>
-    <td  ><input type="button" id="92" value="登記" onclick="writeData(this)"></td>
-    <td  ><input type="button" id="93" value="登記" onclick="writeData(this)"></td>
-    <td  ><input type="button" id="94" value="登記" onclick="writeData(this)"></td>
-    <td  ><input type="button" id="95" value="登記" onclick="writeData(this)"></td>
-    <td  ><input type="button" id="96" value="登記" onclick="writeData(this)"></td>
-    <td  ><input type="button" id="97" value="登記" onclick="writeData(this)"></td>
-    <td  ><input type="button" id="98" value="登記" onclick="writeData(this)"></td>
-    <td  ><input type="button" id="99" value="登記" onclick="writeData(this)"></td>
-    <td  ><input type="button" id="100" value="登記" onclick="writeData(this)"></td>
-　</tr>
+
  <tr align="center">
-　<td style="background-color:#FFDD55">團諮3</td>
+　<td rowspan="5" style="background-color:yellow"><br><span id="wednesday"></span><br>(三)<br></td>
+　<td style="background-color:#FFDD55">諮商A</td>
      <td  ><input type="button" id="101" value="登記" onclick="writeData(this)"></td>
     <td  ><input type="button" id="102" value="登記" onclick="writeData(this)"></td>
     <td  ><input type="button" id="103" value="登記" onclick="writeData(this)"></td>
@@ -281,9 +283,9 @@
     <td  ><input type="button" id="108" value="登記" onclick="writeData(this)"></td>
     <td  ><input type="button" id="109" value="登記" onclick="writeData(this)"></td>
     <td  ><input type="button" id="110" value="登記" onclick="writeData(this)"></td>
-     
-    <tr align="center">
-　  <td style="background-color:#FFDD55">905</td>
+　</tr>
+　<tr align="center">
+　<td style="background-color:#FFDD55">諮商B</td>
      <td  ><input type="button" id="111" value="登記" onclick="writeData(this)"></td>
     <td  ><input type="button" id="112" value="登記" onclick="writeData(this)"></td>
     <td  ><input type="button" id="113" value="登記" onclick="writeData(this)"></td>
@@ -295,50 +297,51 @@
     <td  ><input type="button" id="119" value="登記" onclick="writeData(this)"></td>
     <td  ><input type="button" id="120" value="登記" onclick="writeData(this)"></td>
 　</tr>
+ <tr align="center">
+　<td style="background-color:#FFDD55">諮商C</td>
+     <td  ><input type="button" id="121" value="登記" onclick="writeData(this)"></td>
+    <td  ><input type="button" id="122" value="登記" onclick="writeData(this)"></td>
+    <td  ><input type="button" id="123" value="登記" onclick="writeData(this)"></td>
+    <td  ><input type="button" id="124" value="登記" onclick="writeData(this)"></td>
+    <td  ><input type="button" id="125" value="登記" onclick="writeData(this)"></td>
+    <td  ><input type="button" id="126" value="登記" onclick="writeData(this)"></td>
+    <td  ><input type="button" id="127" value="登記" onclick="writeData(this)"></td>
+    <td  ><input type="button" id="128" value="登記" onclick="writeData(this)"></td>
+    <td  ><input type="button" id="129" value="登記" onclick="writeData(this)"></td>
+    <td  ><input type="button" id="130" value="登記" onclick="writeData(this)"></td>
+     
+    <tr align="center">
+　  <td style="background-color:#FFDD55">諮商D</td>
+     <td  ><input type="button" id="131" value="登記" onclick="writeData(this)"></td>
+    <td  ><input type="button" id="132" value="登記" onclick="writeData(this)"></td>
+    <td  ><input type="button" id="133" value="登記" onclick="writeData(this)"></td>
+    <td  ><input type="button" id="134" value="登記" onclick="writeData(this)"></td>
+    <td  ><input type="button" id="135" value="登記" onclick="writeData(this)"></td>
+    <td  ><input type="button" id="136" value="登記" onclick="writeData(this)"></td>
+    <td  ><input type="button" id="137" value="登記" onclick="writeData(this)"></td>
+    <td  ><input type="button" id="138" value="登記" onclick="writeData(this)"></td>
+    <td  ><input type="button" id="139" value="登記" onclick="writeData(this)"></td>
+    <td  ><input type="button" id="140" value="登記" onclick="writeData(this)"></td>
+　</tr>
 
  <tr align="center">
-　<td rowspan="4" style="background-color:yellow"><br><span id="thursday"></span><br>(四)<br></td>
-　<td style="background-color:#FFDD55">個諮1</td>
-     <td  style="background-color:#FFFFC9" ><input type="button" id="121" value="登記" onclick="writeData(this)"></td>
-    <td  style="background-color:#FFFFC9"><input type="button" id="122" value="登記" onclick="writeData(this)"></td>
-    <td  style="background-color:#FFFFC9"><input type="button" id="123" value="登記" onclick="writeData(this)"></td>
-    <td  style="background-color:#FFFFC9"><input type="button" id="124" value="登記" onclick="writeData(this)"></td>
-    <td  style="background-color:#FFFFC9"><input type="button" id="125" value="登記" onclick="writeData(this)"></td>
-    <td  style="background-color:#FFFFC9"><input type="button" id="126" value="登記" onclick="writeData(this)"></td>
-    <td  style="background-color:#FFFFC9"><input type="button" id="127" value="登記" onclick="writeData(this)"></td>
-    <td  style="background-color:#FFFFC9"><input type="button" id="128" value="登記" onclick="writeData(this)"></td>
-    <td  style="background-color:#FFFFC9"><input type="button" id="129" value="登記" onclick="writeData(this)"></td>
-    <td  style="background-color:#FFFFC9"><input type="button" id="130" value="登記" onclick="writeData(this)"></td>
-　<tr align="center">
-　<td style="background-color:#FFDD55">個諮2</td>
-    <td  style="background-color:#FFFFC9" ><input type="button" id="131" value="登記" onclick="writeData(this)"></td>
-    <td  style="background-color:#FFFFC9"><input type="button" id="132" value="登記" onclick="writeData(this)"></td>
-    <td  style="background-color:#FFFFC9"><input type="button" id="133" value="登記" onclick="writeData(this)"></td>
-    <td  style="background-color:#FFFFC9"><input type="button" id="134" value="登記" onclick="writeData(this)"></td>
-    <td  style="background-color:#FFFFC9"><input type="button" id="135" value="登記" onclick="writeData(this)"></td>
-    <td  style="background-color:#FFFFC9"><input type="button" id="136" value="登記" onclick="writeData(this)"></td>
-    <td  style="background-color:#FFFFC9"><input type="button" id="137" value="登記" onclick="writeData(this)"></td>
-    <td  style="background-color:#FFFFC9"><input type="button" id="138" value="登記" onclick="writeData(this)"></td>
-    <td  style="background-color:#FFFFC9"><input type="button" id="139" value="登記" onclick="writeData(this)"></td>
-    <td  style="background-color:#FFFFC9"><input type="button" id="140" value="登記" onclick="writeData(this)"></td>
+　  <td style="background-color:#FFDD55">諮商E</td>
+     <td  ><input type="button" id="141" value="登記" onclick="writeData(this)"></td>
+    <td  ><input type="button" id="142" value="登記" onclick="writeData(this)"></td>
+    <td  ><input type="button" id="143" value="登記" onclick="writeData(this)"></td>
+    <td  ><input type="button" id="144" value="登記" onclick="writeData(this)"></td>
+    <td  ><input type="button" id="145" value="登記" onclick="writeData(this)"></td>
+    <td  ><input type="button" id="146" value="登記" onclick="writeData(this)"></td>
+    <td  ><input type="button" id="147" value="登記" onclick="writeData(this)"></td>
+    <td  ><input type="button" id="148" value="登記" onclick="writeData(this)"></td>
+    <td  ><input type="button" id="149" value="登記" onclick="writeData(this)"></td>
+    <td  ><input type="button" id="150" value="登記" onclick="writeData(this)"></td>
 　</tr>
+
  <tr align="center">
-　<td style="background-color:#FFDD55">團諮3</td>
-    <td  style="background-color:#FFFFC9" ><input type="button" id="141" value="登記" onclick="writeData(this)"></td>
-    <td  style="background-color:#FFFFC9"><input type="button" id="142" value="登記" onclick="writeData(this)"></td>
-    <td  style="background-color:#FFFFC9"><input type="button" id="143" value="登記" onclick="writeData(this)"></td>
-    <td  style="background-color:#FFFFC9"><input type="button" id="144" value="登記" onclick="writeData(this)"></td>
-    <td  style="background-color:#FFFFC9"><input type="button" id="145" value="登記" onclick="writeData(this)"></td>
-    <td  style="background-color:#FFFFC9"><input type="button" id="146" value="登記" onclick="writeData(this)"></td>
-    <td  style="background-color:#FFFFC9"><input type="button" id="147" value="登記" onclick="writeData(this)"></td>
-    <td  style="background-color:#FFFFC9"><input type="button" id="148" value="登記" onclick="writeData(this)"></td>
-    <td  style="background-color:#FFFFC9"><input type="button" id="149" value="登記" onclick="writeData(this)"></td>
-    <td  style="background-color:#FFFFC9"><input type="button" id="150" value="登記" onclick="writeData(this)"></td>
-　  </tr>
-        
-    <tr align="center">
-        <td style="background-color:#FFDD55">905</td>
- 　  <td  style="background-color:#FFFFC9" ><input type="button" id="151" value="登記" onclick="writeData(this)"></td>
+　<td rowspan="5" style="background-color:yellow"><br><span id="thursday"></span><br>(四)<br></td>
+　<td style="background-color:#FFDD55">諮商A</td>
+     <td  style="background-color:#FFFFC9" ><input type="button" id="151" value="登記" onclick="writeData(this)"></td>
     <td  style="background-color:#FFFFC9"><input type="button" id="152" value="登記" onclick="writeData(this)"></td>
     <td  style="background-color:#FFFFC9"><input type="button" id="153" value="登記" onclick="writeData(this)"></td>
     <td  style="background-color:#FFFFC9"><input type="button" id="154" value="登記" onclick="writeData(this)"></td>
@@ -348,119 +351,199 @@
     <td  style="background-color:#FFFFC9"><input type="button" id="158" value="登記" onclick="writeData(this)"></td>
     <td  style="background-color:#FFFFC9"><input type="button" id="159" value="登記" onclick="writeData(this)"></td>
     <td  style="background-color:#FFFFC9"><input type="button" id="160" value="登記" onclick="writeData(this)"></td>
+　<tr align="center">
+　<td style="background-color:#FFDD55">諮商B</td>
+    <td  style="background-color:#FFFFC9" ><input type="button" id="161" value="登記" onclick="writeData(this)"></td>
+    <td  style="background-color:#FFFFC9"><input type="button" id="162" value="登記" onclick="writeData(this)"></td>
+    <td  style="background-color:#FFFFC9"><input type="button" id="163" value="登記" onclick="writeData(this)"></td>
+    <td  style="background-color:#FFFFC9"><input type="button" id="164" value="登記" onclick="writeData(this)"></td>
+    <td  style="background-color:#FFFFC9"><input type="button" id="165" value="登記" onclick="writeData(this)"></td>
+    <td  style="background-color:#FFFFC9"><input type="button" id="166" value="登記" onclick="writeData(this)"></td>
+    <td  style="background-color:#FFFFC9"><input type="button" id="167" value="登記" onclick="writeData(this)"></td>
+    <td  style="background-color:#FFFFC9"><input type="button" id="168" value="登記" onclick="writeData(this)"></td>
+    <td  style="background-color:#FFFFC9"><input type="button" id="169" value="登記" onclick="writeData(this)"></td>
+    <td  style="background-color:#FFFFC9"><input type="button" id="170" value="登記" onclick="writeData(this)"></td>
+　</tr>
+ <tr align="center">
+　<td style="background-color:#FFDD55">諮商C</td>
+    <td  style="background-color:#FFFFC9" ><input type="button" id="171" value="登記" onclick="writeData(this)"></td>
+    <td  style="background-color:#FFFFC9"><input type="button" id="172" value="登記" onclick="writeData(this)"></td>
+    <td  style="background-color:#FFFFC9"><input type="button" id="173" value="登記" onclick="writeData(this)"></td>
+    <td  style="background-color:#FFFFC9"><input type="button" id="174" value="登記" onclick="writeData(this)"></td>
+    <td  style="background-color:#FFFFC9"><input type="button" id="175" value="登記" onclick="writeData(this)"></td>
+    <td  style="background-color:#FFFFC9"><input type="button" id="176" value="登記" onclick="writeData(this)"></td>
+    <td  style="background-color:#FFFFC9"><input type="button" id="177" value="登記" onclick="writeData(this)"></td>
+    <td  style="background-color:#FFFFC9"><input type="button" id="178" value="登記" onclick="writeData(this)"></td>
+    <td  style="background-color:#FFFFC9"><input type="button" id="179" value="登記" onclick="writeData(this)"></td>
+    <td  style="background-color:#FFFFC9"><input type="button" id="180" value="登記" onclick="writeData(this)"></td>
+　  </tr>
+        
+    <tr align="center">
+        <td style="background-color:#FFDD55">諮商D</td>
+ 　  <td  style="background-color:#FFFFC9" ><input type="button" id="181" value="登記" onclick="writeData(this)"></td>
+    <td  style="background-color:#FFFFC9"><input type="button" id="182" value="登記" onclick="writeData(this)"></td>
+    <td  style="background-color:#FFFFC9"><input type="button" id="183" value="登記" onclick="writeData(this)"></td>
+    <td  style="background-color:#FFFFC9"><input type="button" id="184" value="登記" onclick="writeData(this)"></td>
+    <td  style="background-color:#FFFFC9"><input type="button" id="185" value="登記" onclick="writeData(this)"></td>
+    <td  style="background-color:#FFFFC9"><input type="button" id="186" value="登記" onclick="writeData(this)"></td>
+    <td  style="background-color:#FFFFC9"><input type="button" id="187" value="登記" onclick="writeData(this)"></td>
+    <td  style="background-color:#FFFFC9"><input type="button" id="188" value="登記" onclick="writeData(this)"></td>
+    <td  style="background-color:#FFFFC9"><input type="button" id="189" value="登記" onclick="writeData(this)"></td>
+    <td  style="background-color:#FFFFC9"><input type="button" id="190" value="登記" onclick="writeData(this)"></td>
 　</tr>     
+
+<tr align="center">
+        <td style="background-color:#FFDD55">諮商E</td>
+ 　  <td  style="background-color:#FFFFC9" ><input type="button" id="191" value="登記" onclick="writeData(this)"></td>
+    <td  style="background-color:#FFFFC9"><input type="button" id="192" value="登記" onclick="writeData(this)"></td>
+    <td  style="background-color:#FFFFC9"><input type="button" id="193" value="登記" onclick="writeData(this)"></td>
+    <td  style="background-color:#FFFFC9"><input type="button" id="194" value="登記" onclick="writeData(this)"></td>
+    <td  style="background-color:#FFFFC9"><input type="button" id="195" value="登記" onclick="writeData(this)"></td>
+    <td  style="background-color:#FFFFC9"><input type="button" id="196" value="登記" onclick="writeData(this)"></td>
+    <td  style="background-color:#FFFFC9"><input type="button" id="197" value="登記" onclick="writeData(this)"></td>
+    <td  style="background-color:#FFFFC9"><input type="button" id="198" value="登記" onclick="writeData(this)"></td>
+    <td  style="background-color:#FFFFC9"><input type="button" id="199" value="登記" onclick="writeData(this)"></td>
+    <td  style="background-color:#FFFFC9"><input type="button" id="200" value="登記" onclick="writeData(this)"></td>
+　</tr>    
         
 
  <tr align="center">
-　<td rowspan="4" style="background-color:yellow"><br><span id="friday"></span><br>(五)<br></td>
-　<td style="background-color:#FFDD55">個諮1</td>
-    <td  ><input type="button" id="161" value="登記" onclick="writeData(this)"></td>
-    <td  ><input type="button" id="162" value="登記" onclick="writeData(this)"></td>
-    <td  ><input type="button" id="163" value="登記" onclick="writeData(this)"></td>
-    <td  ><input type="button" id="164" value="登記" onclick="writeData(this)"></td>
-    <td  ><input type="button" id="165" value="登記" onclick="writeData(this)"></td>
-    <td  ><input type="button" id="166" value="登記" onclick="writeData(this)"></td>
-    <td  ><input type="button" id="167" value="登記" onclick="writeData(this)"></td>
-    <td  ><input type="button" id="168" value="登記" onclick="writeData(this)"></td>
-    <td  ><input type="button" id="169" value="登記" onclick="writeData(this)"></td>
-    <td  ><input type="button" id="170" value="登記" onclick="writeData(this)"></td>
+　<td rowspan="5" style="background-color:yellow"><br><span id="friday"></span><br>(五)<br></td>
+　<td style="background-color:#FFDD55">諮商A</td>
+    <td  ><input type="button" id="201" value="登記" onclick="writeData(this)"></td>
+    <td  ><input type="button" id="202" value="登記" onclick="writeData(this)"></td>
+    <td  ><input type="button" id="203" value="登記" onclick="writeData(this)"></td>
+    <td  ><input type="button" id="204" value="登記" onclick="writeData(this)"></td>
+    <td  ><input type="button" id="205" value="登記" onclick="writeData(this)"></td>
+    <td  ><input type="button" id="206" value="登記" onclick="writeData(this)"></td>
+    <td  ><input type="button" id="207" value="登記" onclick="writeData(this)"></td>
+    <td  ><input type="button" id="208" value="登記" onclick="writeData(this)"></td>
+    <td  ><input type="button" id="209" value="登記" onclick="writeData(this)"></td>
+    <td  ><input type="button" id="210" value="登記" onclick="writeData(this)"></td>
 　</tr>
 　<tr align="center">
-　<td style="background-color:#FFDD55">個諮2</td>
-    <td  ><input type="button" id="171" value="登記" onclick="writeData(this)"></td>
-    <td  ><input type="button" id="172" value="登記" onclick="writeData(this)"></td>
-    <td  ><input type="button" id="173" value="登記" onclick="writeData(this)"></td>
-    <td  ><input type="button" id="174" value="登記" onclick="writeData(this)"></td>
-    <td  ><input type="button" id="175" value="登記" onclick="writeData(this)"></td>
-    <td  ><input type="button" id="176" value="登記" onclick="writeData(this)"></td>
-    <td  ><input type="button" id="177" value="登記" onclick="writeData(this)"></td>
-    <td  ><input type="button" id="178" value="登記" onclick="writeData(this)"></td>
-    <td  ><input type="button" id="179" value="登記" onclick="writeData(this)"></td>
-    <td  ><input type="button" id="180" value="登記" onclick="writeData(this)"></td>
+　<td style="background-color:#FFDD55">諮商B</td>
+    <td  ><input type="button" id="211" value="登記" onclick="writeData(this)"></td>
+    <td  ><input type="button" id="212" value="登記" onclick="writeData(this)"></td>
+    <td  ><input type="button" id="213" value="登記" onclick="writeData(this)"></td>
+    <td  ><input type="button" id="214" value="登記" onclick="writeData(this)"></td>
+    <td  ><input type="button" id="215" value="登記" onclick="writeData(this)"></td>
+    <td  ><input type="button" id="216" value="登記" onclick="writeData(this)"></td>
+    <td  ><input type="button" id="217" value="登記" onclick="writeData(this)"></td>
+    <td  ><input type="button" id="218" value="登記" onclick="writeData(this)"></td>
+    <td  ><input type="button" id="219" value="登記" onclick="writeData(this)"></td>
+    <td  ><input type="button" id="220" value="登記" onclick="writeData(this)"></td>
 　</tr>
  <tr align="center">
-　<td style="background-color:#FFDD55">團諮3</td>
-    <td  ><input type="button" id="181" value="登記" onclick="writeData(this)"></td>
-    <td  ><input type="button" id="182" value="登記" onclick="writeData(this)"></td>
-    <td  ><input type="button" id="183" value="登記" onclick="writeData(this)"></td>
-    <td  ><input type="button" id="184" value="登記" onclick="writeData(this)"></td>
-    <td  ><input type="button" id="185" value="登記" onclick="writeData(this)"></td>
-    <td  ><input type="button" id="186" value="登記" onclick="writeData(this)"></td>
-    <td  ><input type="button" id="187" value="登記" onclick="writeData(this)"></td>
-    <td  ><input type="button" id="188" value="登記" onclick="writeData(this)"></td>
-    <td  ><input type="button" id="189" value="登記" onclick="writeData(this)"></td>
-    <td  ><input type="button" id="190" value="登記" onclick="writeData(this)"></td>
+　<td style="background-color:#FFDD55">諮商C</td>
+    <td  ><input type="button" id="221" value="登記" onclick="writeData(this)"></td>
+    <td  ><input type="button" id="222" value="登記" onclick="writeData(this)"></td>
+    <td  ><input type="button" id="223" value="登記" onclick="writeData(this)"></td>
+    <td  ><input type="button" id="224" value="登記" onclick="writeData(this)"></td>
+    <td  ><input type="button" id="225" value="登記" onclick="writeData(this)"></td>
+    <td  ><input type="button" id="226" value="登記" onclick="writeData(this)"></td>
+    <td  ><input type="button" id="227" value="登記" onclick="writeData(this)"></td>
+    <td  ><input type="button" id="228" value="登記" onclick="writeData(this)"></td>
+    <td  ><input type="button" id="229" value="登記" onclick="writeData(this)"></td>
+    <td  ><input type="button" id="230" value="登記" onclick="writeData(this)"></td>
 　</tr>
         
      <tr align="center">
-　<td style="background-color:#FFDD55">905</td>
-    <td  ><input type="button" id="191" value="登記" onclick="writeData(this)"></td>
-    <td  ><input type="button" id="192" value="登記" onclick="writeData(this)"></td>
-    <td  ><input type="button" id="193" value="登記" onclick="writeData(this)"></td>
-    <td  ><input type="button" id="194" value="登記" onclick="writeData(this)"></td>
-    <td  ><input type="button" id="195" value="登記" onclick="writeData(this)"></td>
-    <td  ><input type="button" id="196" value="登記" onclick="writeData(this)"></td>
-    <td  ><input type="button" id="197" value="登記" onclick="writeData(this)"></td>
-    <td  ><input type="button" id="198" value="登記" onclick="writeData(this)"></td>
-    <td  ><input type="button" id="199" value="登記" onclick="writeData(this)"></td>
-    <td  ><input type="button" id="200" value="登記" onclick="writeData(this)"></td>
+　<td style="background-color:#FFDD55">諮商D</td>
+    <td  ><input type="button" id="231" value="登記" onclick="writeData(this)"></td>
+    <td  ><input type="button" id="232" value="登記" onclick="writeData(this)"></td>
+    <td  ><input type="button" id="233" value="登記" onclick="writeData(this)"></td>
+    <td  ><input type="button" id="234" value="登記" onclick="writeData(this)"></td>
+    <td  ><input type="button" id="235" value="登記" onclick="writeData(this)"></td>
+    <td  ><input type="button" id="236" value="登記" onclick="writeData(this)"></td>
+    <td  ><input type="button" id="237" value="登記" onclick="writeData(this)"></td>
+    <td  ><input type="button" id="238" value="登記" onclick="writeData(this)"></td>
+    <td  ><input type="button" id="239" value="登記" onclick="writeData(this)"></td>
+    <td  ><input type="button" id="240" value="登記" onclick="writeData(this)"></td>
 　</tr>   
 
+    <tr align="center">
+　<td style="background-color:#FFDD55">諮商E</td>
+    <td  ><input type="button" id="241" value="登記" onclick="writeData(this)"></td>
+    <td  ><input type="button" id="242" value="登記" onclick="writeData(this)"></td>
+    <td  ><input type="button" id="243" value="登記" onclick="writeData(this)"></td>
+    <td  ><input type="button" id="244" value="登記" onclick="writeData(this)"></td>
+    <td  ><input type="button" id="245" value="登記" onclick="writeData(this)"></td>
+    <td  ><input type="button" id="246" value="登記" onclick="writeData(this)"></td>
+    <td  ><input type="button" id="247" value="登記" onclick="writeData(this)"></td>
+    <td  ><input type="button" id="248" value="登記" onclick="writeData(this)"></td>
+    <td  ><input type="button" id="249" value="登記" onclick="writeData(this)"></td>
+    <td  ><input type="button" id="250" value="登記" onclick="writeData(this)"></td>
+　</tr> 
+
    <tr align="center">
-　 <td rowspan="4" style="background-color:yellow"><br><span id="saturday"></span><br>(六)<br></td>
-　 <td style="background-color:#FFDD55">個諮1</td>
-    <td  style="background-color:#FFFFC9" ><input type="button" id="201" value="登記" onclick="writeData(this)"></td>
-    <td  style="background-color:#FFFFC9"><input type="button" id="202" value="登記" onclick="writeData(this)"></td>
-    <td  style="background-color:#FFFFC9"><input type="button" id="203" value="登記" onclick="writeData(this)"></td>
-    <td  style="background-color:#FFFFC9"><input type="button" id="204" value="登記" onclick="writeData(this)"></td>
-    <td  style="background-color:#FFFFC9"><input type="button" id="205" value="登記" onclick="writeData(this)"></td>
-    <td  style="background-color:#FFFFC9"><input type="button" id="206" value="登記" onclick="writeData(this)"></td>
-    <td  style="background-color:#FFFFC9"><input type="button" id="207" value="登記" onclick="writeData(this)"></td>
-    <td  style="background-color:#FFFFC9"><input type="button" id="208" value="登記" onclick="writeData(this)"></td>
-    <td  style="background-color:#FFFFC9"><input type="button" id="209" value="登記" onclick="writeData(this)"></td>
-    <td  style="background-color:#FFFFC9"><input type="button" id="210" value="登記" onclick="writeData(this)"></td>
+　 <td rowspan="5" style="background-color:yellow"><br><span id="saturday"></span><br>(六)<br></td>
+　 <td style="background-color:#FFDD55">諮商A</td>
+    <td  style="background-color:#FFFFC9" ><input type="button" id="251" value="登記" onclick="writeData(this)"></td>
+    <td  style="background-color:#FFFFC9"><input type="button" id="252" value="登記" onclick="writeData(this)"></td>
+    <td  style="background-color:#FFFFC9"><input type="button" id="253" value="登記" onclick="writeData(this)"></td>
+    <td  style="background-color:#FFFFC9"><input type="button" id="254" value="登記" onclick="writeData(this)"></td>
+    <td  style="background-color:#FFFFC9"><input type="button" id="255" value="登記" onclick="writeData(this)"></td>
+    <td  style="background-color:#FFFFC9"><input type="button" id="256" value="登記" onclick="writeData(this)"></td>
+    <td  style="background-color:#FFFFC9"><input type="button" id="257" value="登記" onclick="writeData(this)"></td>
+    <td  style="background-color:#FFFFC9"><input type="button" id="258" value="登記" onclick="writeData(this)"></td>
+    <td  style="background-color:#FFFFC9"><input type="button" id="259" value="登記" onclick="writeData(this)"></td>
+    <td  style="background-color:#FFFFC9"><input type="button" id="260" value="登記" onclick="writeData(this)"></td>
     </tr>
     <tr align="center">
-　  <td style="background-color:#FFDD55">個諮2</td>
-    <td  style="background-color:#FFFFC9" ><input type="button" id="211" value="登記" onclick="writeData(this)"></td>
-    <td  style="background-color:#FFFFC9"><input type="button" id="212" value="登記" onclick="writeData(this)"></td>
-    <td  style="background-color:#FFFFC9"><input type="button" id="213" value="登記" onclick="writeData(this)"></td>
-    <td  style="background-color:#FFFFC9"><input type="button" id="214" value="登記" onclick="writeData(this)"></td>
-    <td  style="background-color:#FFFFC9"><input type="button" id="215" value="登記" onclick="writeData(this)"></td>
-    <td  style="background-color:#FFFFC9"><input type="button" id="216" value="登記" onclick="writeData(this)"></td>
-    <td  style="background-color:#FFFFC9"><input type="button" id="217" value="登記" onclick="writeData(this)"></td>
-    <td  style="background-color:#FFFFC9"><input type="button" id="218" value="登記" onclick="writeData(this)"></td>
-    <td  style="background-color:#FFFFC9"><input type="button" id="219" value="登記" onclick="writeData(this)"></td>
-    <td  style="background-color:#FFFFC9"><input type="button" id="220" value="登記" onclick="writeData(this)"></td>
+　  <td style="background-color:#FFDD55">諮商B</td>
+    <td  style="background-color:#FFFFC9" ><input type="button" id="261" value="登記" onclick="writeData(this)"></td>
+    <td  style="background-color:#FFFFC9"><input type="button" id="262" value="登記" onclick="writeData(this)"></td>
+    <td  style="background-color:#FFFFC9"><input type="button" id="263" value="登記" onclick="writeData(this)"></td>
+    <td  style="background-color:#FFFFC9"><input type="button" id="264" value="登記" onclick="writeData(this)"></td>
+    <td  style="background-color:#FFFFC9"><input type="button" id="265" value="登記" onclick="writeData(this)"></td>
+    <td  style="background-color:#FFFFC9"><input type="button" id="266" value="登記" onclick="writeData(this)"></td>
+    <td  style="background-color:#FFFFC9"><input type="button" id="267" value="登記" onclick="writeData(this)"></td>
+    <td  style="background-color:#FFFFC9"><input type="button" id="268" value="登記" onclick="writeData(this)"></td>
+    <td  style="background-color:#FFFFC9"><input type="button" id="269" value="登記" onclick="writeData(this)"></td>
+    <td  style="background-color:#FFFFC9"><input type="button" id="270" value="登記" onclick="writeData(this)"></td>
   　</tr>
     <tr align="center">
-　  <td style="background-color:#FFDD55">團諮3</td>
-    <td  style="background-color:#FFFFC9" ><input type="button" id="221" value="登記" onclick="writeData(this)"></td>
-    <td  style="background-color:#FFFFC9"><input type="button" id="222" value="登記" onclick="writeData(this)"></td>
-    <td  style="background-color:#FFFFC9"><input type="button" id="223" value="登記" onclick="writeData(this)"></td>
-    <td  style="background-color:#FFFFC9"><input type="button" id="224" value="登記" onclick="writeData(this)"></td>
-    <td  style="background-color:#FFFFC9"><input type="button" id="225" value="登記" onclick="writeData(this)"></td>
-    <td  style="background-color:#FFFFC9"><input type="button" id="226" value="登記" onclick="writeData(this)"></td>
-    <td  style="background-color:#FFFFC9"><input type="button" id="227" value="登記" onclick="writeData(this)"></td>
-    <td  style="background-color:#FFFFC9"><input type="button" id="228" value="登記" onclick="writeData(this)"></td>
-    <td  style="background-color:#FFFFC9"><input type="button" id="229" value="登記" onclick="writeData(this)"></td>
-    <td  style="background-color:#FFFFC9"><input type="button" id="230" value="登記" onclick="writeData(this)"></td>
+　  <td style="background-color:#FFDD55">諮商C</td>
+    <td  style="background-color:#FFFFC9" ><input type="button" id="271" value="登記" onclick="writeData(this)"></td>
+    <td  style="background-color:#FFFFC9"><input type="button" id="272" value="登記" onclick="writeData(this)"></td>
+    <td  style="background-color:#FFFFC9"><input type="button" id="273" value="登記" onclick="writeData(this)"></td>
+    <td  style="background-color:#FFFFC9"><input type="button" id="274" value="登記" onclick="writeData(this)"></td>
+    <td  style="background-color:#FFFFC9"><input type="button" id="275" value="登記" onclick="writeData(this)"></td>
+    <td  style="background-color:#FFFFC9"><input type="button" id="276" value="登記" onclick="writeData(this)"></td>
+    <td  style="background-color:#FFFFC9"><input type="button" id="277" value="登記" onclick="writeData(this)"></td>
+    <td  style="background-color:#FFFFC9"><input type="button" id="278" value="登記" onclick="writeData(this)"></td>
+    <td  style="background-color:#FFFFC9"><input type="button" id="279" value="登記" onclick="writeData(this)"></td>
+    <td  style="background-color:#FFFFC9"><input type="button" id="280" value="登記" onclick="writeData(this)"></td>
 　  </tr>
   
     <tr align="center">
-　  <td style="background-color:#FFDD55">905</td>
-    <td  style="background-color:#FFFFC9" ><input type="button" id="231" value="登記" onclick="writeData(this)"></td>
-    <td  style="background-color:#FFFFC9"><input type="button" id="232" value="登記" onclick="writeData(this)"></td>
-    <td  style="background-color:#FFFFC9"><input type="button" id="233" value="登記" onclick="writeData(this)"></td>
-    <td  style="background-color:#FFFFC9"><input type="button" id="234" value="登記" onclick="writeData(this)"></td>
-    <td  style="background-color:#FFFFC9"><input type="button" id="235" value="登記" onclick="writeData(this)"></td>
-    <td  style="background-color:#FFFFC9"><input type="button" id="236" value="登記" onclick="writeData(this)"></td>
-    <td  style="background-color:#FFFFC9"><input type="button" id="237" value="登記" onclick="writeData(this)"></td>
-    <td  style="background-color:#FFFFC9"><input type="button" id="238" value="登記" onclick="writeData(this)"></td>
-    <td  style="background-color:#FFFFC9"><input type="button" id="239" value="登記" onclick="writeData(this)"></td>
-    <td  style="background-color:#FFFFC9"><input type="button" id="240" value="登記" onclick="writeData(this)"></td>
+　  <td style="background-color:#FFDD55">諮商D</td>
+    <td  style="background-color:#FFFFC9" ><input type="button" id="281" value="登記" onclick="writeData(this)"></td>
+    <td  style="background-color:#FFFFC9"><input type="button" id="282" value="登記" onclick="writeData(this)"></td>
+    <td  style="background-color:#FFFFC9"><input type="button" id="283" value="登記" onclick="writeData(this)"></td>
+    <td  style="background-color:#FFFFC9"><input type="button" id="284" value="登記" onclick="writeData(this)"></td>
+    <td  style="background-color:#FFFFC9"><input type="button" id="285" value="登記" onclick="writeData(this)"></td>
+    <td  style="background-color:#FFFFC9"><input type="button" id="286" value="登記" onclick="writeData(this)"></td>
+    <td  style="background-color:#FFFFC9"><input type="button" id="287" value="登記" onclick="writeData(this)"></td>
+    <td  style="background-color:#FFFFC9"><input type="button" id="288" value="登記" onclick="writeData(this)"></td>
+    <td  style="background-color:#FFFFC9"><input type="button" id="289" value="登記" onclick="writeData(this)"></td>
+    <td  style="background-color:#FFFFC9"><input type="button" id="290" value="登記" onclick="writeData(this)"></td>
   　</tr>
-        
+
+    <tr align="center">
+　  <td style="background-color:#FFDD55">諮商E</td>
+    <td  style="background-color:#FFFFC9" ><input type="button" id="291" value="登記" onclick="writeData(this)"></td>
+    <td  style="background-color:#FFFFC9"><input type="button" id="292" value="登記" onclick="writeData(this)"></td>
+    <td  style="background-color:#FFFFC9"><input type="button" id="293" value="登記" onclick="writeData(this)"></td>
+    <td  style="background-color:#FFFFC9"><input type="button" id="294" value="登記" onclick="writeData(this)"></td>
+    <td  style="background-color:#FFFFC9"><input type="button" id="295" value="登記" onclick="writeData(this)"></td>
+    <td  style="background-color:#FFFFC9"><input type="button" id="296" value="登記" onclick="writeData(this)"></td>
+    <td  style="background-color:#FFFFC9"><input type="button" id="297" value="登記" onclick="writeData(this)"></td>
+    <td  style="background-color:#FFFFC9"><input type="button" id="298" value="登記" onclick="writeData(this)"></td>
+    <td  style="background-color:#FFFFC9"><input type="button" id="299" value="登記" onclick="writeData(this)"></td>
+    <td  style="background-color:#FFFFC9"><input type="button" id="300" value="登記" onclick="writeData(this)"></td>
+  　</tr>
         
         
 </table>
@@ -581,9 +664,9 @@ function next(){
 
        
       
-        z=z+240;
+        z=z+300;
         
-         for (y=1;y<=240;y++){
+         for (y=1;y<=300;y++){
            document.getElementById(y).value=registerdata[y+z]; 
 
             if (document.getElementById(y).value=="登記"){
@@ -635,9 +718,9 @@ function back(){
         document.getElementById("friday").innerHTML=datedata[i+4]; 
         document.getElementById("saturday").innerHTML=datedata[i+5]; 
 
-       z=z-240;
+       z=z-300;
         
-         for (y=1;y<=240;y++){
+         for (y=1;y<=300;y++){
            document.getElementById(y).value=registerdata[y+z]; 
 
             if (document.getElementById(y).value=="登記"){
