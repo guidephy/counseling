@@ -7,6 +7,79 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">    
     <title>觀音高中諮商室借用系統</title>
+<link rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer" 
+        />
+    <style>
+
+        *{
+    
+    box-sizing: border-box;
+    font-family: 'Open Sans',sans-serif;
+}
+
+button{
+
+    border-radius: 10px;
+}
+
+       body{
+    height: 100vh;
+   
+    background-image: url('https://th.bing.com/th/id/OIG.9535aAW4lv9JuDM9W8Y5?pid=ImgGn');
+    background-size: cover;
+    background-position: center;
+}
+    .title{
+        color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-top: 30px;
+    }
+
+    .password{
+        border-radius: 20px;
+        height: 40px;
+        border: none;
+        outline: none;
+        font-size: 1.5rem;
+    }
+
+    .pwbutton{
+        width:120px;
+        border-radius: 20px;
+        height: 40px;
+        border: none;
+    outline: none;
+    font-weight: bold;
+    color:white;
+    background-color:  #D26900;
+    cursor: pointer;
+    font-size: 1.5rem;
+    }
+
+    .pwbutton:hover{
+        opacity:0.8;
+        scale:1.05;
+    }
+
+    .passwordarea{
+
+   
+    }
+
+    .alltable{
+        margin-top: 0px ;
+    }
+    .studentclass{
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    </style>
 
     <script>
    var parameter = {};
@@ -103,18 +176,19 @@
     
     
 <body>
-<h2 align="center" style="color:blue;">觀音高中諮商室借用系統</h2>
+<h2 class="title" id="titlename" align="center">觀音高中諮商空間借用</h2>
 
-    <div id="password" align="center">
-    <input type="password"  style="text-align:center;" id="passcode" placeholder="請輸入密碼"><button id="sendBtn" onclick="send()">送出</button>
+    <div class="passwordarea" id="password" align="center">
+    <input class="password" type="password"  style="text-align:center;" id="passcode" placeholder="請輸入密碼">
+    <button  class="pwbutton" id="sendBtn" onclick="send()">送出</button>
     </div>
 
 <div id="tabledata" style='visibility:hidden'>
 <h4 id="username"></h4>
-<h4>使用學生班級:<input id="class" placeholder="請輸入學生班級"></h4>
+<h4 class="studentclass">使用學生班級:<input id="class" placeholder="請輸入學生班級"></h4>
     
 
-    <table border="1" align="center" style="border:3px #FFAC55 solid;padding:5px; width:100%" rules="all"  >
+    <table  class="alltable" border="1" align="center" style="border:3px #FFAC55 solid;padding:5px; width:100%" rules="all"  >
 　       <tr style="background-color:yellow">
 　           <td colspan="12" align="center"><button id="backBtn"  onclick="back()">上一週</button>&nbsp&nbsp<<&nbsp&nbsp第<span id="week"></span>週&nbsp&nbsp>>&nbsp&nbsp<button id="nextBtn"  onclick="next()">下一週</button></td>
 　       </tr>
@@ -562,6 +636,12 @@ function send(){
             userpass=data.split(",");
 
     if(document.getElementById("passcode").value==userpass[1]){
+
+        document.body.style.backgroundImage = 'none';
+        document.getElementById("password").remove();
+        document.getElementById("titlename").style.display = 'none';
+        const body = document.querySelector('body');
+        body.style.backgroundImage = "url('')";
     document.getElementById("password").remove();
      document.getElementById("tabledata").style.visibility='visible';
 
@@ -569,13 +649,21 @@ function send(){
      document.getElementById("username").innerHTML=username;
 
     }else if(document.getElementById("passcode").value==userpass[2]){
-    document.getElementById("password").remove();
+    
+        document.body.style.backgroundImage = 'none';
+        document.getElementById("password").remove();
+        document.getElementById("titlename").style.display = 'none';
+    document.getElementById("titlename").style.color = 'blue';
      document.getElementById("tabledata").style.visibility='visible';
 
      username='林仟弘';
      document.getElementById("username").innerHTML=username;
 
+
     }else if(document.getElementById("passcode").value==userpass[3]){
+                document.body.style.backgroundImage = 'none';
+        document.getElementById("password").remove();
+        document.getElementById("titlename").style.display = 'none';
     document.getElementById("password").remove();
      document.getElementById("tabledata").style.visibility='visible';
 
@@ -583,6 +671,9 @@ function send(){
      document.getElementById("username").innerHTML=username;
 
     }else if(document.getElementById("passcode").value==userpass[4]){
+                document.body.style.backgroundImage = 'none';
+        document.getElementById("password").remove();
+        document.getElementById("titlename").style.display = 'none';
     document.getElementById("password").remove();
      document.getElementById("tabledata").style.visibility='visible';
 
@@ -594,6 +685,9 @@ function send(){
      document.getElementById("tabledata").style.visibility='visible';
 
      username='吳姿瑩';
+        document.body.style.backgroundImage = 'none';
+        document.getElementById("password").remove();
+        document.getElementById("titlename").style.display = 'none';
      document.getElementById("username").innerHTML=username;
 
     }else if(document.getElementById("passcode").value==userpass[6]){
@@ -601,9 +695,15 @@ function send(){
      document.getElementById("tabledata").style.visibility='visible';
 
      username='蔡美娟';
+             document.body.style.backgroundImage = 'none';
+        document.getElementById("password").remove();
+        document.getElementById("titlename").style.display = 'none';
      document.getElementById("username").innerHTML=username;
 
     }else if(document.getElementById("passcode").value==userpass[7]){
+                document.body.style.backgroundImage = 'none';
+        document.getElementById("password").remove();
+        document.getElementById("titlename").style.display = 'none';
     document.getElementById("password").remove();
      document.getElementById("tabledata").style.visibility='visible';
 
@@ -611,6 +711,9 @@ function send(){
      document.getElementById("username").innerHTML=username;
 
     }else if(document.getElementById("passcode").value==userpass[8]){
+                document.body.style.backgroundImage = 'none';
+        document.getElementById("password").remove();
+        document.getElementById("titlename").style.display = 'none';
     document.getElementById("password").remove();
      document.getElementById("tabledata").style.visibility='visible';
 
@@ -618,6 +721,9 @@ function send(){
      document.getElementById("username").innerHTML=username;
 
     }else if(document.getElementById("passcode").value==userpass[9]){
+                document.body.style.backgroundImage = 'none';
+        document.getElementById("password").remove();
+        document.getElementById("titlename").style.display = 'none';
     document.getElementById("password").remove();
      document.getElementById("tabledata").style.visibility='visible';
 
@@ -625,6 +731,9 @@ function send(){
      document.getElementById("username").innerHTML=username;
 
     }else if(document.getElementById("passcode").value==userpass[10]){
+                document.body.style.backgroundImage = 'none';
+        document.getElementById("password").remove();
+        document.getElementById("titlename").style.display = 'none';
     document.getElementById("password").remove();
      document.getElementById("tabledata").style.visibility='visible';
 
