@@ -866,75 +866,83 @@ function back(){
 
 function writeData(abc){
 
+    var tname = username;
+    var originalValue = abc.value; // [新增] 先儲存按鈕原本的文字
 
-var tname = username;
+    if(abc.value=="登記"&&tname){    
 
-if(abc.value=="登記"&&tname){    
+        // [新增] 立即提供使用者回饋，並禁用按鈕
+        abc.value = "處理中...";
+        abc.disabled = true;
 
-      $.get("https://script.google.com/macros/s/AKfycbw3XVi8A4QlOaozb-PCYzvDBWL5paSmsXAfyE8DEoQ2A8csytvp/exec",{ 
-                         "j": parseInt(abc.id)+z,
-                         "abc": document.getElementById("class").value+"  "+tname,
-                         "i":0},
+        $.get("https://script.google.com/macros/s/AKfycbw3XVi8A4QlOaozb-PCYzvDBWL5paSmsXAfyE8DEoQ2A8csytvp/exec",{ 
+                            "j": parseInt(abc.id)+z,
+                            "abc": document.getElementById("class").value+"  "+tname,
+                            "i":0},
                         function (data) {
-                         
-                         if (data=="登記完成"){
-                       abc.value=document.getElementById("class").value+"  "+tname;
-                       abc.style.color = 'blue';
-                       alert(data);
+                            
+                            if (data=="登記完成"){
+                                abc.value=document.getElementById("class").value+"  "+tname;
+                                abc.style.color = 'blue';
+                                alert(data);
 
-                       if (tname=="王慧芳"){
-                        abc.style.background = "#FFB7DD";
-                        }else if (tname=="蘇恩琦") {
-                        abc.style.background = "#FFC8B4"; 
-                        }else if (tname=="杜卉千") {
-                        abc.style.background = "#FFFF77"; 
-                        }else if (tname=="林欣嫻") {
-                        abc.style.background = "#99FF99"; 
-                        }else if (tname=="蔡佩真") {
-                        abc.style.background = "#AAFFEE"; 
-                        }else if (tname=="張雅雯") {
-                        abc.style.background = "#CCEEFF"; 
-                        }else if (tname=="吳姿瑩") {
-                        abc.style.background = "#CCCCFF"; 
-                        }else if (tname=="劉羿潁") {
-                        abc.style.background = "#D1BBFF"; 
-                        }else if (tname=="趙淳雅") {
-                        abc.style.background = "#F0BBFF"; 
-                        }else if (tname=="王孝瑞") {
-                        abc.style.background = "#FFFFFF"; 
-                        };
-                       
+                                if (tname=="王慧芳"){
+                                    abc.style.background = "#FFB7DD";
+                                }else if (tname=="蘇恩琦") {
+                                    abc.style.background = "#FFC8B4"; 
+                                }else if (tname=="杜卉千") {
+                                    abc.style.background = "#FFFF77"; 
+                                }else if (tname=="林欣嫻") {
+                                    abc.style.background = "#99FF99"; 
+                                }else if (tname=="蔡佩真") {
+                                    abc.style.background = "#AAFFEE"; 
+                                }else if (tname=="張雅雯") {
+                                    abc.style.background = "#CCEEFF"; 
+                                }else if (tname=="吳姿瑩") {
+                                    abc.style.background = "#CCCCFF"; 
+                                }else if (tname=="劉羿潁") {
+                                    abc.style.background = "#D1BBFF"; 
+                                }else if (tname=="趙淳雅") {
+                                    abc.style.background = "#F0BBFF"; 
+                                }else if (tname=="王孝瑞") {
+                                    abc.style.background = "#FFFFFF"; 
+                                };
+                            
 
-                       }else
-                       {
-                        alert(data);
-                       }
-                    });    
-      registerdata[ parseInt(abc.id)+z]=document.getElementById("class").value+"  "+tname;
+                            }else {
+                                // 如果登記失敗，恢復按鈕原本的狀態
+                                abc.value = originalValue; 
+                                alert(data);
+                            }
+                            
+                            abc.disabled = false; // [新增] 不論成功或失敗，最後都要重新啟用按鈕
+                        });    
+        registerdata[ parseInt(abc.id)+z]=document.getElementById("class").value+"  "+tname;
 
 
-}else if(abc.value==document.getElementById("class").value+"  "+tname){
+    }else if(abc.value==document.getElementById("class").value+"  "+tname){
 
+        // [新增] 立即提供使用者回饋，並禁用按鈕
+        abc.value = "處理中...";
+        abc.disabled = true;
 
-$.get("https://script.google.com/macros/s/AKfycbw3XVi8A4QlOaozb-PCYzvDBWL5paSmsXAfyE8DEoQ2A8csytvp/exec",{ 
-                         "j": parseInt(abc.id)+z,
-                         "abc": tname,
-                          "i":1},
-                         
+        $.get("https://script.google.com/macros/s/AKfycbw3XVi8A4QlOaozb-PCYzvDBWL5paSmsXAfyE8DEoQ2A8csytvp/exec",{ 
+                                "j": parseInt(abc.id)+z,
+                                "abc": tname,
+                                "i":1},
+                                
                         function (data) {
-                         
-                         
-                       abc.value="登記";
-                       abc.style.color = 'black';
-                       abc.style.background = "#F5F5F5";
+                                
+                            abc.value="登記";
+                            abc.style.color = 'black';
+                            abc.style.background = "#F5F5F5";
 
-                         alert("已取消登記");
-                    });  
+                            alert("已取消登記");
+                            abc.disabled = false; // [新增] 重新啟用按鈕
+                        });  
 
-      registerdata[ parseInt(abc.id)+z]="登記";
-
-
-}
+        registerdata[ parseInt(abc.id)+z]="登記";
+    }
 }
   
     
@@ -944,4 +952,5 @@ $.get("https://script.google.com/macros/s/AKfycbw3XVi8A4QlOaozb-PCYzvDBWL5paSmsX
 
 </body>
 </html>
+
 
